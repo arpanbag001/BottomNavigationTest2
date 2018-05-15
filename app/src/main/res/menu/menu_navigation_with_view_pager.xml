@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_music"
+        android:icon="@drawable/ic_audiotrack_black_24dp"
+        android:title="Busic" />
+    <item
+        android:id="@+id/i_backup"
+        android:icon="@drawable/ic_audiotrack_black_24dp"
+        android:title="Backup" />
+    <item
+        android:id="@+id/i_friends"
+        android:icon="@drawable/ic_audiotrack_black_24dp"
+        android:title="Friends" />
+    <item
+        android:id="@+id/i_4"
+        android:icon="@drawable/ic_audiotrack_black_24dp"
+        android:title="4th item" />
+</menu>
