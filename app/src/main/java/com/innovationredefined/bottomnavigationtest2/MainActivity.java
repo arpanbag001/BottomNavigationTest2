@@ -1,8 +1,11 @@
 package com.innovationredefined.bottomnavigationtest2;
 
 import android.content.res.Configuration;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
         bnve = findViewById(R.id.bnve);
         setUpBnvAccordingToOrientation(bnve,this.getResources().getConfiguration().orientation);
+        bnve.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                bnve.refreshLabelsVisibility();
+                return false;
+            }
+        });
 
     }
 
@@ -41,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
             //code for landscape mode
             bnve.setTextVisibility(true);
+            bnve.setButtonsLabelsVisibility(true);
             //bnve.setItemHeight(BottomNavigationViewEx.dp2px(this, 48));
         }
 

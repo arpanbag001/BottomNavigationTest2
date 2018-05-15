@@ -42,6 +42,7 @@ public class BottomNavigationViewEx extends BottomNavigationView {
     private boolean visibilityHeightRecord;
     private int mItemHeight;
     private boolean textVisibility = true;
+    private boolean labelsVisibility = false;
     // used for animation end
 
     // used for setupWithViewPager
@@ -295,8 +296,35 @@ public class BottomNavigationViewEx extends BottomNavigationView {
             // restore mItemHeight
             setItemHeight(mItemHeight);
         }
-
         mMenuView.updateMenuView();
+    }
+
+    public void setButtonsLabelsVisibility(boolean visibility ){
+        this.labelsVisibility = visibility;
+        refreshLabelsVisibility();
+    }
+
+    public void refreshLabelsVisibility(){
+        for (BottomNavigationItemView button : mButtons) {
+            TextView mLargeLabel = getField(button.getClass(), button, "mLargeLabel");
+            TextView mSmallLabel = getField(button.getClass(), button, "mSmallLabel");
+            if(labelsVisibility) {
+                if (mLargeLabel != null) {
+                    mLargeLabel.setVisibility(VISIBLE);
+                }
+                if (mSmallLabel != null) {
+                    mSmallLabel.setVisibility(VISIBLE);
+                }
+            }
+            else {
+                if (mLargeLabel != null) {
+                    mLargeLabel.setVisibility(INVISIBLE);
+                }
+                if (mSmallLabel != null) {
+                    mSmallLabel.setVisibility(INVISIBLE);
+                }
+            }
+        }
     }
 
     /**
