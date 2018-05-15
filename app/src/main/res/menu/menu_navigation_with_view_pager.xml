@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/i_music"
+        android:id="@+id/menu_item_one"
         android:icon="@drawable/ic_audiotrack_black_24dp"
         android:title="Music" />
     <item
-        android:id="@+id/i_backup"
+        android:id="@+id/menu_item_two"
         android:icon="@drawable/ic_backup_black_24dp"
         android:title="Backup" />
     <item
-        android:id="@+id/i_friends"
+        android:id="@+id/menu_item_three"
         android:icon="@drawable/ic_camera_black_24dp"
         android:title="Camera" />
     <item
-        android:id="@+id/i_4"
+        android:id="@+id/menu_item_four"
         android:icon="@drawable/ic_visibility_black_24dp"
         android:title="Visibility" />
 </menu>
