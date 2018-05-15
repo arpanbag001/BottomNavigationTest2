@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+    <com.innovationredefined.bottomnavigationtest2.BottomNavigationViewEx
         android:id="@+id/bnve"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

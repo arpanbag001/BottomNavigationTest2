@@ -1,11 +1,9 @@
 package com.innovationredefined.bottomnavigationtest2;
 
-import android.app.Activity;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
 
