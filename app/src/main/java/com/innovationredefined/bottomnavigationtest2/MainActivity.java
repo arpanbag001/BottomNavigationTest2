@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationViewEx bnve = findViewById(R.id.bnve);
         bnve.setTextVisibility(false);
         bnve.enableShiftingMode(false);
+        bnve.setItemHeight(BottomNavigationViewEx.dp2px(this, 48));
     }
 }
